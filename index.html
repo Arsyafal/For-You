@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Ulang Tahun, Yusrina 🎂</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="chat-container">
+      <div class="chat-header">
+        <span class="chat-title">Selamat Ulang Tahun, Yusrina 🎂</span>
+        <button class="dark-toggle" onclick="toggleDark()">🌓</button>
+      </div>
+
+      <!-- Jika belum 30 Juli, countdown ditampilkan di JS -->
+      <div class="chat-box" id="chat-box">
+        <div class="message bot fade-in">
+          "Halo Yusrina, ada sesuatu yang ingin aku sampaikan hari ini…"
+        </div>
+      </div>
+
+      <!-- Input Chat -->
+      <div class="chat-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Tulis pesan..."
+          onkeydown="handleKey(event)"
+        />
+        <button onclick="sendMessage()">Kirim</button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
